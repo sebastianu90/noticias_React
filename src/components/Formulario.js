@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class Formulario extends Component {
   state = {
-    categoria: "general",
+    categoria: "breaking-news",
   };
 
   cambiarCategoria = (e) => {
@@ -26,13 +26,15 @@ class Formulario extends Component {
 
             <div className="input-field col s12 m8">
               <select onChange={this.cambiarCategoria}>
-                <option value="general">General</option>
-                <option value="business">Business</option>
-                <option value="entertainment">Entertainment</option>
+                <option value="breaking-news">Breaking News</option>
+                <option value="world">World</option>
+                <option value="nation">Nation</option>
                 <option value="health">Health</option>
                 <option value="science">Science</option>
                 <option value="sports">Sports</option>
                 <option value="technology">Technology</option>
+                <option value="business">Business</option>
+                <option value="entertainment">Entertainment</option>
               </select>
             </div>
           </form>
