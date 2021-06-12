@@ -12,12 +12,11 @@ class App extends Component {
     this.consultarNoticias();
   }
 
-  consultarNoticias = async (categoria = "breaking-news") => {
-    const url = `https://gnews.io/api/v4/${categoria}?token=9106ae1e522290e9327a30c4715787b7`;
+  consultarNoticias = async () => {
+    const url =
+      "https://gnews.io/api/v4/search?q=example&token=9106ae1e522290e9327a30c4715787b7&lang=en";
 
-    const respuesta = await fetch(url, {
-      mode: "no-cors",
-    });
+    const respuesta = await fetch(url);
     const noticias = await respuesta.json();
 
     this.setState({

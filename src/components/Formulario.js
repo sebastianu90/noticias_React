@@ -24,7 +24,7 @@ class Formulario extends Component {
           <form>
             <h2>Encuentra Noticias por categorias</h2>
 
-            <div className="input-field col s12 m8">
+            {/* <div className="input-field col s12 m8">
               <select onChange={this.cambiarCategoria}>
                 <option value="breaking-news">Breaking News</option>
                 <option value="world">World</option>
@@ -36,7 +36,7 @@ class Formulario extends Component {
                 <option value="business">Business</option>
                 <option value="entertainment">Entertainment</option>
               </select>
-            </div>
+            </div> */}
           </form>
         </div>
       </div>
