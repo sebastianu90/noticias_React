@@ -15,7 +15,11 @@ class App extends Component {
   consultarNoticias = async (categoria = "breaking-news") => {
     const url = `https://gnews.io/api/v4/${categoria}?token=9106ae1e522290e9327a30c4715787b7`;
 
-    const respuesta = await fetch(url);
+    const respuesta = await fetch(url, {
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+      },
+    });
     const noticias = await respuesta.json();
 
     this.setState({
